@@ -1,5 +1,9 @@
 <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
+    SetEnvIf Origin "^https://routine-maker-knbn\.vercel\.app$" CORS_ORIGIN=$0
+    Header set Access-Control-Allow-Origin "%{CORS_ORIGIN}e" env=CORS_ORIGIN
+    Header set Access-Control-Allow-Credentials "true"
     Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
     Header set Access-Control-Allow-Headers "Content-Type, Authorization"
 </IfModule>
+
+Options -Indexes
