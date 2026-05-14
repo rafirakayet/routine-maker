@@ -1,11 +1,12 @@
 <?php
 
 class Database {
-    private $host = "localhost";
-    private $db_name = "routine_maker_db";
-    private $username = "root";
-    private $password = "";
+    private $host = "sql102.infinityfree.com";
+    private $db_name = "if0_41918440_routine_maker_db";
+    private $username = "if0_41918440";
+    private $password = "9DHs3qWmbQLVl";
     public $conn;
+
 
     public function getConnection() {
         $this->conn = null;
