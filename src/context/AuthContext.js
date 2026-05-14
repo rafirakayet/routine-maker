@@ -2,7 +2,7 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 
 // ✅ Works from any device on the network
-const API_BASE_URL = `http://${window.location.hostname}/routine-maker/api`;
+const API_BASE_URL = 'http://routinemaker.infinityfreeapp.com/api'
 
 const AuthContext = createContext();
 
